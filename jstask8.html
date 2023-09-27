@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_Task-8</title>
+    <link rel="stylesheet" href="./jstask8.css" />
+  </head>
+  <body>
+    <div class="formcontainer">
+      <h1>Registration Form</h1>
+      <form id="StudentForm">
+        <table>
+          <tr>
+            <td>
+              <label for="fname"><b>First Name</b></label>
+            </td>
+            <td>
+              <input type="text" id="fname" />
+              <span id="fnError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="lname"><b>Last Name</b></label>
+            </td>
+            <td>
+              <input type="text" id="lname" />
+              <span id="lnError" class="warning"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Email"><b>Email</b></label>
+            </td>
+            <td>
+              <input type="email" id="Email" />
+              <span id="EmailError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Password"><b>Password</b></label>
+            </td>
+            <td>
+              <input type="password" id="Password" />
+              <span id="PassError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="RePassword"><b>Re-enter Password</b></label>
+            </td>
+            <td>
+              <input type="password" id="RePassword" />
+              <span id="RePassError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">
+              <b>Gender</b>
+            </td>
+            <td style="display: flex; justify-content: space-between">
+              <div>
+                <input type="radio" name="gen" id="Male" value="M" />
+                <label for="Male">Male</label>
+              </div>
+              <span id="GenError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: left">
+              <input type="radio" name="gen" id="Female" value="F" />
+              <label for="Female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Age"><b>Age</b></label>
+            </td>
+            <td>
+              <input type="number" id="Age" />
+              <span id="AgeError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Phone"><b>Phone Number</b></label>
+            </td>
+            <td>
+              <input type="number" id="Phone" />
+              <span id="PhnError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Address" style="margin-right: 5px"
+                ><b>Address</b></label
+              >
+            </td>
+            <td>
+              <textarea id="Address" rows="5" cols="40"></textarea>
+              <span class="warning" id="AdrError"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="State"><b>State</b></label>
+            </td>
+            <td>
+              <input type="text" id="State" />
+              <span id="StateError" class="warning"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Country"><b>Country</b></label>
+            </td>
+            <td>
+              <select name="cntry" id="Country">
+                <option value="dummy">Choose your country</option>
+                <option value="ind">India</option>
+                <option value="rus">Russia</option>
+                <option value="uk">UK</option>
+                <option value="us">US</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Lng"><b>Languages known</b></label>
+            </td>
+            <td id="lngscontainer">
+              <div id="lngs">
+                <input type="checkbox" id="eng" name="eng" />
+                <label for="eng">English</label>
+              </div>
+              <div class="lngs">
+                <input type="checkbox" id="knd" name="knd" />
+                <label for="knd">Kannada</label>
+              </div>
+              <div class="lngs">
+                <input type="checkbox" id="hin" name="hin" />
+                <label for="hin">Hindi</label>
+              </div>
+              <div class="lngs">
+                <input type="checkbox" id="tel" name="tel" />
+                <label for="tel">Telugu</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <div style="margin-right: 345px" id="declCont">
+                <input type="checkbox" name="decl" id="decl" />
+                <label for="decl"
+                  >Hereby I declare all the details are true</label
+                >
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <span style="margin-right: 200px"
+                >Log in to <a href="#">Ethnus</a> website</span
+              >
+            </td>
+          </tr>
+        </table>
+      </form>
+      <button type="submit" id="regbtn">register</button>
+    </div>
+    <script src="./jstask8.js"></script>
+  </body>
+</html>

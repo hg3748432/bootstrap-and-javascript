@@ -1,0 +1,75 @@
+.warning {
+    color: red;
+    margin: 10px;
+  }
+  .error {
+    border: 3px solid red;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .formcontainer {
+    background-image: radial-gradient(
+      circle at top,
+      #fefed8 20%,
+      #ec9ab1,
+      #d371bf
+    );
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #StudentForm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #GenError {
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #lngscontainer {
+    display: flex;
+    justify-content: left;
+  }
+  h1 {
+    color: blue;
+  }
+  
+  td:first-child {
+    text-align: right;
+  }
+  
+  /* input {
+  } */
+  
+  input:not([type="checkbox"]):not([type="radio"]) {
+    width: 60%;
+  }
+  
+  #DeclError {
+    min-width: 100px !important;
+  }
+  
+  #regbtn {
+    background-color: #f80500;
+    color: white;
+    text-transform: capitalize;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 20px;
+  }
+  

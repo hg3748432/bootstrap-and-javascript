@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-2</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin: 50px">Enter String</h1>
+    <input type="text" id="inp" />
+    <button type="button" onclick="sorted_string()" style="margin-top: 20px">Submit</button>
+    <div>
+      Sorted string -> 
+      <section id="sorted"></section>
+    </div>
+    <script>
+        function sorted_string() {
+    let ele = document.getElementById("inp").value;
+    let result = ele.split("").sort()
+    let sorted = result.join("");
+    console.log(sorted);
+    document.getElementById("sorted").innerHTML = sorted;
+    }
+    </script>
+  </body>
+</html>

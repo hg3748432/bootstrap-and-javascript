@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-3</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-top: 20px">
+      1st Number: <input type="number" id="first" />
+    </div>
+    <div style="margin-top: 20px">
+      2nd Number: <input type="number" id="second" />
+    </div>
+    <div class="btn_container">
+      <button type="button" onclick="multiply()" style="margin: 10px">
+        Multiply
+      </button>
+      <button type="button" onclick="division()" style="margin: 10px">Divide</button>
+    </div>
+    <div>
+      The Result is:
+      <section id="answer"></section>
+    </div>
+    <script>
+      function multiply() {
+  let num1 = parseFloat(document.getElementById("first").value);
+  let num2 = parseFloat(document.getElementById("second").value);
+  document.getElementById("answer").innerText = num1*num2;
+}
+
+function division() {
+  let num1 = parseFloat(document.getElementById("first").value);
+  let num2 = parseFloat(document.getElementById("second").value);
+  document.getElementById("answer").innerText = num1 / num2;
+}
+    </script>
+  </body>
+</html>

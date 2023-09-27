@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="D:\4th sem\Web Technologies Lab\Assignment 2\q4\4.css"
+    />
+    <title>Task-5</title>
+    <style>
+      .warning {
+        color: red;
+        margin: 10px;
+      }
+      .error {
+        border: 3px solid red;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="StudentForm">
+      <table>
+        <tr>
+          <td>
+            <label for="Name">Name: </label>
+          </td>
+          <td>
+            <input type="text" id="Name" />
+            <span id="NameError" class="warning"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Email">Email: </label>
+          </td>
+          <td>
+            <input type="email" id="Email" />
+            <span id="EmailError" class="warning"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Website">Website: </label>
+          </td>
+          <td>
+            <input type="url" id="Website" />
+            <span id="UrlError" class="warning"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Message" style="margin-right: 5px">Message: </label>
+          </td>
+          <td>
+            <textarea id="Message" rows="4" cols="30"></textarea>
+            <span class="warning" id="MsgError"></span>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" id="submit-btn">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="./jstask5.js"></script>
+  </body>
+</html>

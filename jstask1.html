@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin: 50px">Enter Number to Reverse</h1>
+    <input
+      type="text"
+      placeholder="Enter the text"
+      name="input_text"
+      id="inp"
+    />
+    <button type="button" onclick="reverse()" style="margin: 20px">
+      Reverse
+    </button>
+    <div>Reversed Output: <span id="rev"></span></div>
+  </body>
+  <script>
+    function reverse() {
+  let str = document.getElementById("inp").value;
+  var splitString = str.split(""); 
+  var reverseArray = splitString.reverse();
+  var y = reverseArray.join(""); 
+  document.getElementById("rev").innerHTML = y;
+}
+  </script>
+</html>

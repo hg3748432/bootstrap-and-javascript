@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btncontainer {
+    margin: 10px;
+  }
+  
+  #animatedImage {
+    width: 500px;
+    transform: translateX(0);
+    transition: transform 5s linear;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
